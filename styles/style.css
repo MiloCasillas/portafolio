@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*:root {
+    --color-primario: #511D43;
+    --color-secundario:#9013E3;
+    --color-terciario:#DC2525;
+    --color-hover:#9BC09C;
+
+    --fuente-montserrat:'Montserrat',sans-serif;
+    --fuente-krona:'Krona One',sans-serif;
+}*/
+
+:root {
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    margin:0;        
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-primario);
+    color:var(--color-secundario);
+    box-sizing: border-box;
+    /*height: 100px;*/
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+    /*con que establezcamos el padding desde el primer
+    header, no debemos agregarlo en las clases hijas*/
+}
+
+/*.header:hover {
+    width: 350px;
+    background-color: rgb(110, 4, 4);
+    display: flex;
+    align-items: center;
+    /* margin: 10% 15%; 
+    padding: 7% 15%;
+    justify-content: space-between;
+}*/
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    /* margin: 10% 15%; */
+    padding: 6% 15%;
+    justify-content: space-between;
+    gap: 60px; /*espacio entre imagen y columna de texto*/
+}
+
+.presentacion__contenido {
+    /*width: 630px;*/
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px /*espacio entre párrafos*/;
+}
+
+.presentacion__contenido__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+
+}
+
+.titulo-destaque {
+     color: var(--color-terciario);
+}
+
+.presentacion__contenido__texto {
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo {
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion__enlaces__link {
+    /*width: 381px;*/
+    width: 50%;
+    background-color: var(--color-primario);
+    text-align: center; /*tal vez es redundante, porque justify-content ya lo está centrando*/
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content:center;
+    gap: 10px; /*separacion entre redes sociales y logo en los botones*/
+}
+
+.presentacion__enlaces__link:hover{
+    background-color: var(--color-hover);
+}
+
+.presentacion__imagen {
+    width: 50%;
+}
+
+.footer {
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px ) {
+
+    .header {
+        padding: 8%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+    }
+
+    .presentacion__contenido {
+        width: 100%;
+    }
+}
+
+ /* Esto es un comentario en CSS */
+    /* 
+        Esto es un comentario en CSS con
+        salto de línea
+    */
+
+    
