@@ -161,6 +161,10 @@ body {
     .presentacion__contenido {
         width: 100%;
     }
+
+    .presentacion__enlaces__link {
+        width: 70%;
+    }
 }
 
  /* Esto es un comentario en CSS */
